@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+button {
+  cursor: pointer;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  margin: 12px 0;
+}
+
+.nav__image {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__image img {
+  height: 70px;
+  display: inline-block;
+}
+
+.nav__body {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__body ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__body ul li {
+  list-style: none;
+  font-family: "Finlandica", sans-serif;
+}
+
+.nav__body ul li:first-child a {
+  color: #957242;
+}
+
+.nav__body ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.nav__social {
+  width: 30%;
+}
+
+.nav__social ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.nav__social ul li {
+  list-style: none;
+  padding: 0 9px;
+}
+
+.nav__social ul li:last-child {
+  font-size: 20px;
+}
+.nav__social ul li a {
+  text-decoration: none;
+  color: #111821;
+}
+
+.nav__social ul li a:hover {
+  color: #957242;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/AlHatab_DeliveryWebsiteBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 
+    ===================== about =====================
+*/
+
+#about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: "Amatic SC", cursive;
+}
+
+.about__image {
+  width: 50%;
+  height: 354px;
+  background-image: url("./images/Bread.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__image__body {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}
+
+.about__image__body__text {
+  color: #fff;
+  font-size: 69px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #957242;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.about__body {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about__body__contant {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__body__contant h1 {
+  font-size: 55px;
+  font-weight: 600;
+  color: #957242;
+  margin-bottom: 20px;
+}
+
+.about__body__contant div {
+  font-size: 22px;
+  line-height: 31px;
+  padding: 0px 5px 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about__body__contant button {
+  padding: 11px 16px;
+  font-size: 16px;
+  margin: 4px auto;
+  background-color: transparent;
+  border: 1px solid #957242;
+  color: #957242;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about__body__contant button:hover {
+  background-color: #957242;
+  color: #fff;
+}
+
+.backround__image2 {
+  background-image: url("./images/sweets-fixed.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.backround__image3 {
+  background-image: url("./images/bakery-fixed.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 
+    media query for about mobile view
+*/
+
+@media screen and (max-width: 768px) {
+  .about__image {
+    width: 100%;
+    height: 500px;
+  }
+
+  .about__body {
+    width: 100%;
+  }
+}
+
+.facts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: "Amatic SC", cursive;
+  background: #f9eee3;
+  padding: 40px 0;
+}
+
+.facts-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 40px 0;
+}
+
+.facts-body .facts-body__contant h1 {
+  font-size: 54px;
+  margin: 0 14px;
+}
+
+.facts button {
+  padding: 9px 17px;
+  font-size: 23px;
+  margin: 4px auto;
+  background-color: transparent;
+  border: 1px solid #957242;
+  color: #957242;
+  transition: background-color 0.3s ease-in-out;
+  text-transform: capitalize;
+  font-family: "Amatic SC", cursive;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.facts button:hover {
+  background-color: #957242;
+  color: #fff;
+}
+
+/*  
+
+    ===================== components =====================
+*/
+
+.components {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 300px;
+}
+
+.components .componet1,
+.components .componet2,
+.components .componet3 {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.components .componet1 .componet1__contant,
+.components .componet2 .componet2__contant,
+.components .componet3 .componet3__contant {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #957242;
+  color: #f9eee3;
+  line-height: 24px;
+  font-size: 17px;
+  padding: 7px;
+  opacity: 0;
+}
+
+.components .componet1:hover .componet1__contant,
+.components .componet2:hover .componet2__contant,
+.components .componet3:hover .componet3__contant {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.componet1 {
+  background-image: url("./images/shutterstock_606454796-635x420.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.componet2 {
+  background-image: url("./images/barley-635x420.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.componet3 {
+  background-image: url("./images/nut2-635x420.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 
+============================ our_story ============================
+
+*/
+.our_story {
+  background: #f9eee3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our_story_body {
+  color: #141313;
+  width: 47%;
+  padding: 27px 0px;
+}
+
+.our_story .our_story_body .our_story_imag {
+  display: flex;
+  justify-content: center;
+}
+
+.our_story .our_story_body .our_story_imag img {
+  margin: 10px 0;
+}
+
+.our_story .our_story_body .our_story_header {
+  display: flex;
+  justify-content: center;
+}
+
+.our_story .our_story_body .our_story_header h1 {
+  font-size: 61px;
+  margin: 1px 13px;
+  font-family: "Amatic SC", cursive;
+  color: #957242;
+}
+
+.our_story_header_right_image,
+.our_story_header_left_image {
+  display: flex;
+  align-items: center;
+}
+
+.our_story .our_story_body .our_story_tex {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 10px 0px;
+}
+
+.our_story .our_story_body .our_story_footer_image {
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+============================ social_media ============================
+
+*/
+
+.social_media {
+  background: #fff;
+  color: #957242;
+}
+
+.social_media_container ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social_media_container ul li {
+  list-style: none;
+  margin: 0px 10px;
+  font-size: 22px;
+}
+
+.social_media_container ul li:hover {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 
+============================ products ============================
+
+*/
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products .product1,
+.products .product2,
+.products .product3,
+.products .product4 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.products .product1 {
+  background-image: url("./images/product (3).jpg");
+}
+
+.products .product2 {
+  background-image: url("./images/product (4).jpg");
+}
+
+.products .product3 {
+  background-image: url("./images/product (1).jpg");
+}
+
+.products .product4 {
+  background-image: url("./images/product (6).jpg");
+}
+
+.products .product1:hover,
+.products .product2:hover,
+.products .product3:hover,
+.products .product4:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 
+  ==================== signUp ====================
+
+*/
+
+.signUp {
+  background: #f9eee3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  text-align: center;
+  padding: 110px 0;
+  background: #111821;
+  color: #fff;
+}
+
+.signUp .signUp_body {
+  width: 50%;
+}
+
+.signUp .signUp_body .signup-header {
+  font-size: 61px;
+  font-family: "Amatic SC", cursive;
+  font-size: 36px;
+  margin: 25px 0px;
+}
+
+.signUp .signUp_body .signup-contant {
+  font-size: 20px;
+  margin: 0 0 12px 0;
+}
+.singup-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUp .singup-form form input {
+  width: 65%;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 0px 10px;
+  font-size: 18px;
+  background: #cfd1d3;
+
+  color: #0e0e0e;
+  font-family: "Courier New", Courier, monospace;
+  border: 2px solid #fff;
+  outline: none;
+  /* font-family: "Amatic SC", cursive; */
+}
+
+.signUp .singup-form button {
+  width: 10%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 0px;
+  padding: 0px;
+  /* border-left: none; */
+}
+
+/* 
+============================ footer ============================
+
+*/
+
+.footer {
+  background: #f9eee3;
+  color: #141313;
+  padding: 20px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
