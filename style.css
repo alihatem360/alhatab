@@ -12,6 +12,7 @@ button {
 #nav {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   padding: 12px 0;
   position: fixed;
   z-index: 1;
@@ -48,6 +49,7 @@ button {
 
 .nav__body ul {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
@@ -93,6 +95,33 @@ button {
 
 .nav__social ul li a:hover {
   color: #957242;
+}
+
+/* 
+  style for mobile view
+*/
+
+@media screen and (max-width: 768px) {
+  #nav {
+    opacity: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__body {
+    width: 100%;
+  }
+
+  .nav__body ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__body ul li {
+    width: 100%;
+    margin: 4px 0px 4px 0px;
+  }
 }
 
 #header {
@@ -218,7 +247,21 @@ button {
 @media screen and (max-width: 768px) {
   .about__image {
     width: 100%;
-    height: 500px;
+    height: 229px;
+  }
+
+  .about__image__body__text {
+    font-size: 32px;
+  }
+
+  .about__body__contant h1 {
+    font-size: 34px;
+    margin: 11px 0;
+  }
+  .about__body__contant div {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
   }
 
   .about__body {
@@ -272,6 +315,16 @@ button {
   color: #fff;
 }
 
+/* 
+    media query for facts mobile view
+*/
+
+@media screen and (max-width: 768px) {
+  .facts-body .facts-body__contant h1 {
+    font-size: 34px;
+  }
+}
+
 /*  
 
     ===================== components =====================
@@ -317,6 +370,24 @@ button {
   transition: opacity 0.3s ease-in-out;
 }
 
+/* 
+  style for mobile
+*/
+
+@media screen and (max-width: 768px) {
+  .components .componet1,
+  .components .componet2,
+  .components .componet3 {
+    flex: 100%;
+    height: 400px;
+  }
+  .components .componet1 .componet1__contant,
+  .components .componet2 .componet2__contant,
+  .components .componet3 .componet3__contant {
+    opacity: 1;
+  }
+}
+
 .componet1 {
   background-image: url("./images/shutterstock_606454796-635x420.jpg");
   background-size: cover;
@@ -344,7 +415,6 @@ button {
 */
 .our_story {
   background: #f9eee3;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,6 +462,24 @@ button {
 .our_story .our_story_body .our_story_footer_image {
   display: flex;
   justify-content: center;
+}
+
+.our_story .our_story_body .our_story_footer_image img {
+  width: 100%;
+}
+
+/* 
+  style for mobile version 
+*/
+
+@media screen and (max-width: 768px) {
+  .our_story {
+    margin: 901px 0 0 0;
+  }
+  .our_story_body {
+    width: 100%;
+    padding: 0px;
+  }
 }
 
 /* 
@@ -474,6 +562,20 @@ button {
 }
 
 /* 
+  style for mobile version
+*/
+
+@media screen and (max-width: 768px) {
+  .products .product1,
+  .products .product2,
+  .products .product3,
+  .products .product4 {
+    flex: 50%;
+    height: 150px;
+  }
+}
+
+/* 
   ==================== signUp ====================
 
 */
@@ -537,6 +639,36 @@ button {
 }
 
 /* 
+    style for mobile version
+*/
+
+@media screen and (max-width: 768px) {
+  .signUp {
+    padding: 20px 0px;
+  }
+  .signUp .signUp_body {
+    width: 100%;
+  }
+  .signUp .signUp_body .signup-header {
+    font-size: 20px;
+  }
+  .signUp .signUp_body .signup-contant {
+    font-size: 20px;
+    margin: 0 0 12px 0;
+  }
+  .signUp .singup-form form input {
+    width: 100%;
+  }
+
+  .signUp .singup-form form input {
+    height: 40px;
+    font-size: 13px;
+  }
+  .signUp .singup-form button {
+    height: 40px;
+  }
+}
+/* 
 ============================ footer ============================
 
 */
@@ -547,6 +679,22 @@ button {
   padding: 20px 0px;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+/* 
+  style for mobile version
+*/
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 3px 0px;
+  }
+
+  .footer h3 {
+    margin: 10px 0px;
+  }
 }
